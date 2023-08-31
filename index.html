@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOdo App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- add font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awasome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- heading of app -->
+      <header>
+        <h1>Todo APP</h1>
+      </header>
+      <div class="main">
+        <form>
+          <input type="text" placeholder="add task..." />
+          <button type="submit"><i class="fas fa-plus-square"></i></button>
+        </form>
+        <div class="todoList">
+          <!-- added elements comes in ul  -->
+          <ul></ul>
+          <div class="tasks-footer">
+            <div>
+              <span class="count" id="count">total tasks:0</span>
+            </div>
+            <a class="action-buttons" id="action_btn">Clear All</a>
+            <a class="action-buttons" id="action_btn2">Uncompleted</a>
+            <a class="action-buttons" id="action_btn3">Completed</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
